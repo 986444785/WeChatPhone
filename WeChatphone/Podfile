@@ -1,0 +1,5 @@
+pod 'AFNetworking'
+pod 'MBProgressHUD'
+pod 'SDWebImage'
+pod 'UMengAnalytics-NO-IDFA'
+

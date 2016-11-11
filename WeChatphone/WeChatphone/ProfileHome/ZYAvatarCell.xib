@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="ZYAvatarCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="80"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="79"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="昵称" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CEI-pv-gEn">
+                        <rect key="frame" x="80" y="15" width="200" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="9In-6U-sQe"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="话费：100" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SEv-Bd-2b0">
+                        <rect key="frame" x="80" y="40" width="200" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mtc-En-skp">
+                        <rect key="frame" x="15" y="15" width="50" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="50" id="n7l-qQ-bdk"/>
+                        </constraints>
+                        <state key="normal">
+                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="CEI-pv-gEn" firstAttribute="leading" secondItem="mtc-En-skp" secondAttribute="trailing" constant="15" id="0Ab-2M-sDH"/>
+                    <constraint firstItem="mtc-En-skp" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="7" id="0YF-cS-oMx"/>
+                    <constraint firstItem="mtc-En-skp" firstAttribute="top" secondItem="CEI-pv-gEn" secondAttribute="top" id="7gH-Nh-tPR"/>
+                    <constraint firstItem="SEv-Bd-2b0" firstAttribute="top" secondItem="CEI-pv-gEn" secondAttribute="bottom" constant="5" id="8ah-5A-J5F"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="CEI-pv-gEn" secondAttribute="trailing" constant="32" id="Plf-gY-s9D"/>
+                    <constraint firstItem="CEI-pv-gEn" firstAttribute="trailing" secondItem="SEv-Bd-2b0" secondAttribute="trailing" id="UjX-dt-22l"/>
+                    <constraint firstItem="mtc-En-skp" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="UoR-cT-Wfm"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="SEv-Bd-2b0" secondAttribute="bottom" constant="10" id="jjN-e0-ShC"/>
+                    <constraint firstItem="CEI-pv-gEn" firstAttribute="leading" secondItem="SEv-Bd-2b0" secondAttribute="leading" id="kGo-k5-9PQ"/>
+                    <constraint firstItem="mtc-En-skp" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="7" id="uhb-kP-fNz"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="avatarButton" destination="mtc-En-skp" id="dXh-dK-jmU"/>
+                <outlet property="chargeLable" destination="SEv-Bd-2b0" id="Eus-HO-qcr"/>
+                <outlet property="nickLable" destination="CEI-pv-gEn" id="vWM-kW-hEC"/>
+            </connections>
+            <point key="canvasLocation" x="503" y="285"/>
+        </tableViewCell>
+    </objects>
+</document>
